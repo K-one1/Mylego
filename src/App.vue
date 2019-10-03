@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import './assets/css/index.css'
 import Main from './components/main/main'
   export default {
     components: {

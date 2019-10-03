@@ -18,16 +18,25 @@
         <div class="sear"></div>
       </div>
       <div class="btn">
-        <el-button type="success" class="shopCar">购物车</el-button>
-        <el-button type="info" class="indent">我的订单</el-button>
+        <el-button type="success" class="shopCar" @click="linkShopCar">购物车</el-button>
+        <el-button type="info" class="indent">我的订单<span v-show="this.$store.state.num>0">{{this.$store.state.num}}</span></el-button>
       </div>
-      <img src="../../assets/logo.png" alt="" class="img">
+      <img src="../../assets/logo.png" alt="" class="img" @click="linkMian">
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods:{
+    linkShopCar(){
+      this.$router.push('/ShopCar')
+    },
+    linkMian(){
+      this.$router.push('/')
+    }
+  }
+};
 </script>
 
 <style lang="less" scoped>

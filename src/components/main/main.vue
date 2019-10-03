@@ -4,7 +4,7 @@
         <is-header></is-header>
         <!-- body -->
         <div class="body">
-        <is-body></is-body>
+        <router-view></router-view>
         </div>
         <!-- 底部 -->
         <is-footer></is-footer>
@@ -13,12 +13,10 @@
 
 <script>
 import Header from '../../views/header/Header'
-import Body from '../../views/body/Body'
 import Footer from '../../views/footer/Footer'
     export default {
         components:{
             'is-header':Header,
-            'is-body':Body,
             'is-footer':Footer
         }
     }

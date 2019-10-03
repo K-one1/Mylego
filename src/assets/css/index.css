@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+#Ebook .el-carousel__button {
+    width: 18px !important;
+  }
+  .cr{
+    color: red;
+  }
+  .cell .btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px;
+  }
+  .select{
+    background: #ff6600;
+  }
